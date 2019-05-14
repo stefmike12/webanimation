@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  filter: hue-rotate(0deg);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#slider {
+  margin: 15px;
+  position: relative;
+  top: 14px;
+  left: 15px;
+  -webkit-appearance: none;
+  background: black;
+  border-radius: 50px;
+  outline: none;
+  height: 4px;
+  opacity: 0.7;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  border-radius: 50px;
+  background: #FF591D;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  border-radius: 50px;
+  background: #FF591D;
+  cursor: pointer;
+}
+
+#but_1 {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  color: white;
+  background-color: none;
+  padding: 15px;
+  right: 25px;
+  top: 15px;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url(https://cdn1.iconfinder.com/data/icons/material-core/18/invert-colors-512.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 200ms;
+
+
+}
+
+#but_1:hover {
+  opacity: 0.5;
+}
+
+header {
+  margin-top: 16%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.h1 {
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 25.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 25.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  text-align: center;
+  margin: 0rem 2.5rem 0rem 2.5rem;
+}
+
+.h3 {
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 19.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+}
+
+svg {
+  justify-content: space-around;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+#zwarte-balk-3:hover,
+#zwarte-balk-2:hover,
+#zwarte-balk-1:hover {
+  fill: #1DDCFF;
+  transition: all 1s;
+}
+
+.p1 {
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 11.3px;
+}
+
+.p2 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 6.9px;
+}
+
+.p3 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 4.9px;
+}
+
+.p4 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 6.85px;
+}
+
+.p5 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 5.84px;
+}
+
+.p6 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 3.7px;
+}
+
+footer {
+  max-width: 1070px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+
+footer p {
+  line-height: 30px;
+}
+
+
+.glitch {
+  font-family: futura, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 3em;
+  color: #000000;
+  letter-spacing: 25.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  margin: 0 auto;
+  cursor: pointer;
+  transform: translate(0%, 0%);
+
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-glitch);
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.glitch:after {
+  color: #1DDCFF;
+  z-index: -2;
+}
+
+.glitch:before {
+  color: #FF591D;
+  z-index: -1;
+}
+
+.glitch:hover:before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+}
+
+.glitch:hover:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
+}
+
+@media only screen and (max-width: 400px) {
+  .glitch {
+    font-size: 3em;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 0px);
+  }
+
+  40% {
+    transform: translate(-1px, 0px);
+  }
+
+  60% {
+    transform: translate(2px, 0px);
+  }
+
+  80% {
+    transform: translate(3px, 0px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  article {
+    margin-left: 40px;
+    z-index: 10;
+  }
+  
+  .glitch {
+    position: relative;
+    display: flex;
+    background-color: none;
+  }
+  
+  footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  svg {
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #Artboard-Copy {
+    height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+   article {
+    margin-left: 0 auto;
+    z-index: 10;
+     text-align: left;
+  }
+  
+  .glitch {
+    font-size: 1rem !important;
+    letter-spacing: 1rem;
+  }
+  
+.glitch:before,
+.glitch:after {
+  display: none;
+  }
+  
+  footer {
+    padding: 0px;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+  .p1{
+    letter-spacing: 6px;
+  }
+    .p2{
+    letter-spacing: 3px;
+  }
+ 
+    .p3{
+    letter-spacing: 1.6px;
+  }
+ 
+    .p4{
+    letter-spacing: 3.1px;
+  }
+ 
+    .p5{
+    letter-spacing: 2.33px;
+  }
+  
+    .p6{
+    letter-spacing: 0.74px;
+  }
+ 
+ 
+
+
+}
