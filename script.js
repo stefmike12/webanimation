@@ -38,8 +38,10 @@ function onButtonClick() {
   body.style = css;
 }
 
-var slider =
 
-document.getElementById('slider').addEventListener('input', function (e) {
-    document.slider.style.opacity = this.value;
-});
+
+// var slider = false;
+
+// document.getElementById('slider').addEventListener('input', function (e) {
+//     document.slider.style.opacity = this.value;
+// });

@@ -9,6 +9,96 @@ body {
   filter: hue-rotate(0deg);
 }
 
+main {
+  margin: 0 auto;
+  display: flex;
+}
+
+/******************************
+
+opening van website - deuren
+
+******************************/
+
+.door {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background: none;
+}
+
+.door-left {
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  animation: doors 200s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.door-right {
+  background-color: #FF591D;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  animation: doors 200s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes doors {
+  0% {width: 50%;}
+  1% {width: 0%;}
+  100% {width: 0%;}
+}
+
+/**********************************************************
+
+.door-left {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  animation: doors 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 0;
+  height: 0;
+  border-bottom: 100vw solid #FF591D;
+  border-right: 100vw solid transparent;
+}
+
+.door-right {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  animation: doors 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 0;
+  height: 0;
+  border-bottom: 100vw solid transparent;
+  border-right: 100vw solid black;
+}
+
+@keyframes doors {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+***********************************************************/
+
+/******************************
+
+slider animation - verander de hue
+
+******************************/
+
 .button {
   display: flex;
   justify-content: space-between;
@@ -26,7 +116,7 @@ body {
   border-radius: 50px;
   outline: none;
   height: 4px;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 #slider::-webkit-slider-thumb {
@@ -49,6 +139,13 @@ body {
   cursor: pointer;
 }
 
+/******************************
+
+invert button - 
+verander de kleuren naar regatief
+
+******************************/
+
 #but_1 {
   position: relative;
   text-decoration: none;
@@ -69,13 +166,17 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   transition: all 200ms;
-
-
 }
 
 #but_1:hover {
   opacity: 0.5;
 }
+
+/******************************
+
+header - de titel van de illustratie
+
+******************************/
 
 header {
   margin-top: 16%;
@@ -119,91 +220,11 @@ header {
   margin: 0 auto;
 }
 
-main {
-  margin: 0 auto;
-  display: flex;
-}
+/******************************
 
-svg {
-  justify-content: space-around;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  width: 100%;
-}
+glitch - titel glitch op desktop
 
-#zwarte-balk-3:hover,
-#zwarte-balk-2:hover,
-#zwarte-balk-1:hover {
-  fill: #1DDCFF;
-  transition: all 1s;
-}
-
-.p1 {
-  font-family: Futura;
-  font-weight: bold;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 11.3px;
-}
-
-.p2 {
-  font-family: Futura;
-  font-weight: 400;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 6.9px;
-}
-
-.p3 {
-  font-family: Futura;
-  font-weight: 400;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 4.9px;
-}
-
-.p4 {
-  font-family: Futura;
-  font-weight: 400;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 6.85px;
-}
-
-.p5 {
-  font-family: Futura;
-  font-weight: 400;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 5.84px;
-}
-
-.p6 {
-  font-family: Futura;
-  font-weight: 400;
-  font-size: 11px;
-  color: #000000;
-  letter-spacing: 3.7px;
-}
-
-footer {
-  max-width: 1070px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 0 auto;
-  padding-right: 40px;
-  padding-left: 40px;
-
-}
-
-footer p {
-  line-height: 30px;
-}
-
+******************************/
 
 .glitch {
   font-family: futura, sans-serif;
@@ -279,18 +300,123 @@ footer p {
   }
 }
 
+
+/******************************
+
+svg - de illustratie - 
+blokken lijnen enzovoort
+
+******************************/
+
+svg {
+  justify-content: space-around;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+#zwarte-balk-3:hover,
+#zwarte-balk-2:hover,
+#zwarte-balk-1:hover {
+  fill: #1DDCFF;
+  transition: all 1s;
+}
+
+/******************************
+
+p items tekst -
+tekst over de illustratie
+
+******************************/
+
+.p1 {
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 11.3px;
+}
+
+.p2 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 6.9px;
+}
+
+.p3 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 4.9px;
+}
+
+.p4 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 6.85px;
+}
+
+.p5 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 5.84px;
+}
+
+.p6 {
+  font-family: Futura;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+  letter-spacing: 3.7px;
+}
+
+footer {
+  max-width: 1070px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+
+footer p {
+  line-height: 30px;
+}
+
+
 @media only screen and (max-width: 1100px) {
-  article {
-    margin-left: 40px;
+  
+  .door-left {
+    z-index: 10;
+  }
+
+  .door-right {
     z-index: 10;
   }
   
+  article {
+    margin-left: 40px;
+    z-index: 1;
+  }
+
   .glitch {
     position: relative;
     display: flex;
     background-color: none;
   }
-  
+
   footer {
     margin-left: 10px;
     margin-right: 10px;
@@ -314,51 +440,53 @@ footer p {
 
 @media only screen and (max-width: 900px) {
 
-   article {
+  article {
     margin-left: 0 auto;
-    z-index: 10;
-     text-align: left;
+    z-index: 1;
+    text-align: left;
   }
-  
+
   .glitch {
     font-size: 1rem !important;
     letter-spacing: 1rem;
   }
-  
-.glitch:before,
-.glitch:after {
-  display: none;
+
+  .glitch:before,
+  .glitch:after {
+    display: none;
   }
-  
+
   footer {
     padding: 0px;
     justify-content: flex-end;
     margin-right: 40px;
-}
-  .p1{
+  }
+
+  .p1 {
     letter-spacing: 6px;
   }
-    .p2{
+
+  .p2 {
     letter-spacing: 3px;
   }
- 
-    .p3{
+
+  .p3 {
     letter-spacing: 1.6px;
   }
- 
-    .p4{
+
+  .p4 {
     letter-spacing: 3.1px;
   }
- 
-    .p5{
+
+  .p5 {
     letter-spacing: 2.33px;
   }
-  
-    .p6{
+
+  .p6 {
     letter-spacing: 0.74px;
   }
- 
- 
+
+
 
 
 }
