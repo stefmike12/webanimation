@@ -49,14 +49,21 @@ $(document).ready(function() {
         $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
     });
 
-    // Wanneer de gebruiker swiped
-    $(document).on('swiperight', function () {
+    // Wanneer de gebruiker klikt
+    $(document).on('click', function () {
         // Voeg dan de CSS animation property aand de .door-left en -right toe
         $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
     });
 
-    // Wanneer de gebruiker swiped
+    // Wanneer de gebruiker scrollt
     $(document).on('mousewheel', function () {
+        // Voeg dan de CSS animation property aand de .scroll titels scroll up
+        $('.scroll').css('animation', 'scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+        $('.up').css('animation', 'up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+    });
+
+    // Wanneer de gebruiker klikt
+    $(document).on('click', function () {
         // Voeg dan de CSS animation property aand de .scroll titels scroll up
         $('.scroll').css('animation', 'scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
         $('.up').css('animation', 'up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')

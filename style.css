@@ -7,7 +7,7 @@ body {
   background-color: white;
   height: 100vh;
   filter: hue-rotate(0deg);
-  
+
 }
 
 main {
@@ -51,8 +51,13 @@ opening van website - deuren
 }
 
 @keyframes doors {
-  0% {width: 50%;}
-  100% {width: 0%;}
+  0% {
+    width: 50%;
+  }
+
+  100% {
+    width: 0%;
+  }
 }
 
 .text-overlay {
@@ -60,7 +65,7 @@ opening van website - deuren
   justify-content: space-around;
   align-content: center;
   width: 100%;
-align-items: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -89,24 +94,37 @@ align-items: center;
 @keyframes scroll {
   0% {
     font-size: 4rem;
+    -webkit-transform: translate(0px, 0px);
+    /* Safari */
+    transform: translate(0px, 0px);
   }
 
   100% {
     font-size: 0rem;
     opacity: 0;
+    -webkit-transform: translate(-400px, 0px);
+    /* Safari */
+    transform: translate(-400px, 0px);
   }
 }
 
 @keyframes up {
   0% {
     font-size: 4rem;
+    -webkit-transform: translate(0px, 0px);
+    /* Safari */
+    transform: translate(0px, 0px);
   }
 
   100% {
     font-size: 0rem;
     opacity: 0;
+    -webkit-transform: translate(400px, 0px);
+    /* Safari */
+    transform: translate(400px, 0px);
   }
 }
+
 /**********************************************************
 
 .door-left {
@@ -257,6 +275,7 @@ herlaad de pagina
   transform: rotate(180deg);
   transform-origin: 51% 44%;
 }
+
 /******************************
 
 header - de titel van de illustratie
@@ -482,7 +501,7 @@ footer p {
 
 
 @media only screen and (max-width: 1100px) {
-  
+
   .door-left {
     z-index: 9;
   }
@@ -490,7 +509,7 @@ footer p {
   .door-right {
     z-index: 9;
   }
-  
+
   article {
     margin-left: 40px;
     z-index: 1;
@@ -526,29 +545,42 @@ footer p {
 
 @media only screen and (max-width: 900px) {
 
-  .scroll, .up{
+  .scroll,
+  .up {
     font-size: 2rem;
   }
 
   @keyframes scroll {
     0% {
       font-size: 2rem;
+      -webkit-transform: translate(-0px, 0px);
+      /* Safari */
+      transform: translate(0px, 0px);
     }
 
     100% {
-      font-size: 0rem;
+      font-size: 2rem;
       opacity: 0;
+      -webkit-transform: translate(-400px, 0px);
+      /* Safari */
+      transform: translate(-400px, 0px);
     }
   }
 
   @keyframes up {
     0% {
       font-size: 2rem;
+      -webkit-transform: translate(-0px, 0px);
+      /* Safari */
+      transform: translate(0px, 0px);
     }
 
     100% {
-      font-size: 0rem;
+      font-size: 2rem;
       opacity: 0;
+      -webkit-transform: translate(400px, 0px);
+      /* Safari */
+      transform: translate(400px, 0px);
     }
   }
 
