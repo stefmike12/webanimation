@@ -169,9 +169,42 @@ verander de kleuren naar regatief
 }
 
 #but_1:hover {
-  opacity: 0.5;
+  -webkit-transform: scaleX(-1)
 }
 
+/******************************
+
+refresh button - 
+herlaad de pagina
+
+******************************/
+
+#refresh {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  color: white;
+  background-color: none;
+  padding: 15px;
+  right: 25px;
+  top: 15px;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url(http://simpleicon.com/wp-content/uploads/refresh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 400ms;
+}
+
+#refresh:hover {
+  transform: rotate(180deg);
+  transform-origin: 51% 44%;
+}
 /******************************
 
 header - de titel van de illustratie
