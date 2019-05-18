@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
 
     // Wanneer de gebruiker swiped
-    $(document).on('swipe', function () {
+    $(document).on('swipeleft', function () {
         // Voeg dan de CSS animation property aand de .door-left en -right toe
         $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
     });
