@@ -93,8 +93,8 @@ $(document).ready(function () {
     // Wanneer de gebruiker scrollt
     $(document).on("mousewheel", function () {
         // Voeg dan de CSS animation property aand de .scroll titels scroll up
-        $(".scroll").css("WebkitAnimation", "scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
-        $(".up").css("WebkitAnimation", "up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
+        $(".scroll").css("WebkitAnimation", "scroll 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
+        $(".up").css("WebkitAnimation", "up 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
         setTimeout(function () {
             $(".scroll").css("display", "none");
         }, 1000);
@@ -106,8 +106,8 @@ $(document).ready(function () {
     // Wanneer de gebruiker klikt
     $(document).on("click", function () {
         // Voeg dan de CSS animation property aand de .scroll titels scroll up
-        $(".scroll").css("WebkitAnimation", "scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
-        $(".up").css("WebkitAnimation", "up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
+        $(".scroll").css("WebkitAnimation", "scroll 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
+        $(".up").css("WebkitAnimation", "up 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards")
         setTimeout(function () {
             $(".scroll").css("display", "none");
         }, 1000);
