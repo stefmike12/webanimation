@@ -82,6 +82,13 @@ $(document).ready(function() {
     });
 
 
+    // fix voor mobiel?
+
+    $(document).click('.scroll', function () {
+        $('.door-left, .door-right').css("display", "none");
+    });
+
+
     // Wanneer de slider bewogen is
     $('#slider').on('input', function (event) {
         // Krijg de nieuwe waarde van de slider
