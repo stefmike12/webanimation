@@ -48,8 +48,6 @@ $(document).ready(function() {
         // Voeg dan de CSS animation property aand de .door-left en -right toe
         $('.door-left, .door-right').css('WebkitAnimation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
     });
-
-
     
     // Wanneer de gebruiker klikt
     $(document).on('click', function () {
@@ -62,6 +60,12 @@ $(document).ready(function() {
         // Voeg dan de CSS animation property aand de .scroll titels scroll up
         $('.scroll').css('WebkitAnimation', 'scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
         $('.up').css('WebkitAnimation', 'up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+        setTimeout(function () {
+            $('.scroll').css('display', 'none');
+        }, 1000);
+        setTimeout(function () {
+            $('.up').css('display', 'none');
+        }, 1000);
     });
 
     // Wanneer de gebruiker klikt
@@ -69,6 +73,12 @@ $(document).ready(function() {
         // Voeg dan de CSS animation property aand de .scroll titels scroll up
         $('.scroll').css('WebkitAnimation', 'scroll 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
         $('.up').css('WebkitAnimation', 'up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+        setTimeout(function () {
+            $('.scroll').css('display', 'none');
+        }, 1000);
+        setTimeout(function () {
+            $('.up').css('display', 'none');
+        }, 1000);
     });
 
 

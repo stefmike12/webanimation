@@ -125,6 +125,40 @@ opening van website - deuren
   }
 }
 
+@webkit-keyframes scroll {
+  0% {
+    font-size: 4rem;
+    -webkit-transform: translate(0px, 0px);
+    /* Safari */
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    font-size: 0rem;
+    opacity: 0;
+    -webkit-transform: translate(-400px, 0px);
+    /* Safari */
+    transform: translate(-400px, 0px);
+  }
+}
+
+@webkit-keyframes up {
+  0% {
+    font-size: 4rem;
+    -webkit-transform: translate(0px, 0px);
+    /* Safari */
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    font-size: 0rem;
+    opacity: 0;
+    -webkit-transform: translate(400px, 0px);
+    /* Safari */
+    transform: translate(400px, 0px);
+  }
+}
+
 /**********************************************************
 
 .door-left {
