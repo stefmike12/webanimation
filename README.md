@@ -3,7 +3,7 @@ school web animatie html / css
 
 de originele poster:
 
-![](poster.png)
+![](poster.png 100x50)
 
 Preview van de animatie: 
 
