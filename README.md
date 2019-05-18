@@ -7,4 +7,4 @@ de originele poster:
 
 Preview van de animatie: 
 
-http://htmlpreview.github.io/?https://github.com/stefmike12/webanimation/blob/master/index.html
+https://stefmike12.github.io/webanimation/
