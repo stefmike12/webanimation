@@ -33,6 +33,7 @@ opening van website - deuren
 .door-left {
   background-color: black;
   position: absolute;
+  display: block;
   z-index: 1;
   left: 0;
   height: 100%;
@@ -43,6 +44,7 @@ opening van website - deuren
 .door-right {
   background-color: #FF591D;
   position: absolute;
+  display: block;
   z-index: 1;
   right: 0;
   height: 100%;
@@ -71,6 +73,7 @@ opening van website - deuren
 
 .scroll {
   position: relative;
+  display: block;
   z-index: 10;
   background: none;
   color: white;
@@ -82,6 +85,7 @@ opening van website - deuren
 
 .up {
   position: relative;
+  display: block;
   z-index: 10;
   background: none;
   color: white;
