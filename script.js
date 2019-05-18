@@ -49,6 +49,12 @@ $(document).ready(function() {
         $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
     });
 
+    // Wanneer de gebruiker swiped
+    $(document).on('swipe', function () {
+        // Voeg dan de CSS animation property aand de .door-left en -right toe
+        $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+    });
+
     // Wanneer de slider bewogen is
     $('#slider').on('input', function (event) {
         // Krijg de nieuwe waarde van de slider
