@@ -55,6 +55,58 @@ opening van website - deuren
   100% {width: 0%;}
 }
 
+.text-overlay {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+align-items: center;
+  text-align: center;
+}
+
+.scroll {
+  position: relative;
+  z-index: 10;
+  background: none;
+  color: white;
+  font-family: 'futura', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.up {
+  position: relative;
+  z-index: 10;
+  background: none;
+  color: white;
+  font-family: 'futura', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+@keyframes scroll {
+  0% {
+    font-size: 4rem;
+  }
+
+  100% {
+    font-size: 0rem;
+    opacity: 0;
+  }
+}
+
+@keyframes up {
+  0% {
+    font-size: 4rem;
+  }
+
+  100% {
+    font-size: 0rem;
+    opacity: 0;
+  }
+}
 /**********************************************************
 
 .door-left {
@@ -432,11 +484,11 @@ footer p {
 @media only screen and (max-width: 1100px) {
   
   .door-left {
-    z-index: 10;
+    z-index: 9;
   }
 
   .door-right {
-    z-index: 10;
+    z-index: 9;
   }
   
   article {
@@ -473,6 +525,32 @@ footer p {
 }
 
 @media only screen and (max-width: 900px) {
+
+  .scroll, .up{
+    font-size: 2rem;
+  }
+
+  @keyframes scroll {
+    0% {
+      font-size: 2rem;
+    }
+
+    100% {
+      font-size: 0rem;
+      opacity: 0;
+    }
+  }
+
+  @keyframes up {
+    0% {
+      font-size: 2rem;
+    }
+
+    100% {
+      font-size: 0rem;
+      opacity: 0;
+    }
+  }
 
   article {
     margin-left: 0 auto;
