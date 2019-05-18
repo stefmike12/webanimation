@@ -7,6 +7,7 @@ body {
   background-color: white;
   height: 100vh;
   filter: hue-rotate(0deg);
+  
 }
 
 main {
@@ -36,7 +37,7 @@ opening van website - deuren
   left: 0;
   height: 100%;
   width: 50%;
-  animation: doors 200s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* animation: doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
 }
 
 .door-right {
@@ -46,12 +47,11 @@ opening van website - deuren
   right: 0;
   height: 100%;
   width: 50%;
-  animation: doors 200s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* animation: doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
 }
 
 @keyframes doors {
   0% {width: 50%;}
-  1% {width: 0%;}
   100% {width: 0%;}
 }
 
@@ -409,6 +409,7 @@ footer p {
   article {
     margin-left: 40px;
     z-index: 1;
+    background: none;
   }
 
   .glitch {

@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     TweenMax.to($('#oranje-lijn'), 5, { x: -250, ease: Linear.easeInOutQuint, yoyoEase:true, repeat:-1})
     TweenMax.to($('#oranje-balk-boven'), 3, { x: 250, ease: Linear.easeInOutQuint, yoyoEase: true, repeat: -1 })
@@ -16,9 +17,9 @@ function changeOverlay () {
         $('#Artboard-Copy path:eq(' + randomNum + ')').animate({ "opacity" : 1 });
         changeOverlay();
     }, 200);
-	    setTimeou2t(function() { 
+	    setTimeout(function() { 
         $('#Artboard-Copy path:eq(' + randomNum + ')').animate({ "opacity" : 1 });
-        setTimeout();
+        // setTimeout();
     }, 200);
 	
 }
@@ -28,20 +29,57 @@ $(document).ready(function() {
 });
 
 
-
+var hueRotate = 0;
 var toggle = false;
 
 function onButtonClick() {
   var body = document.getElementsByTagName('body')[0];
   toggle = !toggle;
-  var css = toggle ? 'filter: invert(100%);' : 'filter: invert(0%);';
+  var css = toggle ? 'filter: invert(100%)' : 'filter: invert(0%)';
+  css += 'hue-rotate(' + hueRotate + 'deg);';
   body.style = css;
 }
 
+// Wanneer de pagina geladen is en alle elementen er zijn
+$(document).ready(function() {
+
+    // Wanneer de gebruiker zijn muiswiel beweegt
+    $(document).on('mousewheel', function() {
+        // Voeg dan de CSS animation property aand de .door-left en -right toe
+        $('.door-left, .door-right').css('animation', 'doors 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards')
+    });
+
+    // Wanneer de slider bewogen is
+    $('#slider').on('input', function (event) {
+        // Krijg de nieuwe waarde van de slider
+        var value = event.target.value;
+        // Maak hueRotate ook deze waarde, zodat onButtonClick() de waarde ook kan gebruiken
+        hueRotate = value;
+
+        // Geef de hue rotate
+        var css = 'hue-rotate(' + value + 'deg) ';
+        // Voeg de invert hier aan toe
+        css += toggle ? 'invert(100%)' : 'invert(0%)';
+        
+        // en geef de body deze CSS
+        $('body').css('filter', css);
+    })
+
+    $('.glitch').draggable({
+        grid: [40, 40],
+        containment: 'document'
+    });
+
+    $('.footer').draggable({
+        grid: [40, 40],
+        containment: 'document'
+    });
+
+    $('svg').draggable({
+        grid: [40, 40],
+        containment: 'document'
+    });
 
 
-// var slider = false;
 
-// document.getElementById('slider').addEventListener('input', function (e) {
-//     document.slider.style.opacity = this.value;
-// });
+});
