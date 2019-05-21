@@ -64,6 +64,8 @@ $(document).ready(function () {
 });
 
 
+// https://stackoverflow.com/questions/4766201/javascript-invert-color-on-all-elements-of-a-page code bron voor het inverten
+
 var hueRotate = 0;
 var toggle = false;
 
@@ -140,16 +142,20 @@ $(document).ready(function () {
         $('body').css('filter', css);
     });
 
+
+    //draggen van de titel
     $('.glitch').draggable({
         grid: [40, 40],
         containment: 'document'
     });
 
+      //draggen van de beschrijving
     $('.footer').draggable({
         grid: [40, 40],
         containment: 'document'
     });
 
+      //draggen van de afbeelding
     $('svg').draggable({
         grid: [40, 40],
         containment: 'document'
@@ -158,5 +164,5 @@ $(document).ready(function () {
 
 
 
-
+    
 });
